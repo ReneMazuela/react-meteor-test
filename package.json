@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "inject-env": "echo \"window.__env__ = { VITE_OPENAI_API_KEY: \\\"$VITE_OPENAI_API_KEY\\\" };\" > public/env.js",
+    "build": "tsc && npm run inject-env && vite build",
     "preview": "vite preview",
     "start": "serve dist"
   },
