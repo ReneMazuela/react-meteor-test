@@ -10,8 +10,18 @@
     "start": "serve dist"
   },
   "devDependencies": {
+    "@types/prismjs": "^1.26.5",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
     "serve": "^14.2.4",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.30.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
